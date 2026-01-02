@@ -1,0 +1,690 @@
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #222;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+section h2 {
+  text-align: center;      /* centra el texto */
+  display: block;          /* aseguramos que sea bloque */
+  margin: 0 auto 1.5rem;   /* margen superior 0, inferior 1.5rem, centrado horizontalmente */
+  font-size: 1.8rem;
+  color: #222;
+  border-bottom: 2px solid #222;
+  padding-bottom: 0.3rem;
+  width: fit-content;      /* hace que la línea solo tenga el ancho del texto */
+}
+
+/* Dark mode */
+body.dark section h2 {
+  color: #eaeaea;
+  border-color: #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #666;
+}
+
+/* Botones */
+.lang-switch,
+.dark-switch {
+  position: fixed;
+  top: 20px;
+  border: 1px solid #222;
+  background: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.lang-switch:hover,
+.dark-switch:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.lang-switch { right: 90px; }
+.dark-switch { right: 20px; }
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark nav a {
+  color: #eaeaea;
+}
+
+body.dark nav a:hover {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark h2 {
+  border-color: #eaeaea;
+}
+
+body.dark .lang-switch,
+body.dark .dark-switch {
+  border-color: #eaeaea;
+  color: #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+#profiles {
+  margin-bottom: 3rem;
+}
+
+.profiles-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.profile-button {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.profile-button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .profile-button {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .profile-button:hover {
+  background-color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profiles-container {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: #0077b6;
+  font-weight: 500;
+}
+
+.instagram-link .icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(0); /* visible en modo claro */
+}
+
+body.dark .instagram-link {
+  color: #90e0ef;
+}
+
+body.dark .instagram-link .icon {
+  filter: invert(1); /* icono visible en modo oscuro */
+}
+
+/* Skills / badges */
+.skills {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: #222;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.skill:hover {
+  background-color: #0077b6;
+}
+
+body.dark .skill {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .skill:hover {
+  background-color: #90e0ef;
+  color: #121212;
+}
+
+/* Mini galería de Instagram */
+.insta-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.insta-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.insta-gallery img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Botón header del puesto */
+.job-header {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.job-header:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Asegurarnos que el acordeón expanda todo el contenido */
+.job-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.job-body ul.job-list {
+  list-style: none;   /* quita los puntos */
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+
+.job-body ul.job-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+/* Cuando se abre, asignamos max-height dinámico */
+.job.open .job-body {
+  padding: 1rem 1.5rem;
+}
+
+.job.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Modo oscuro */
+body.dark .job-header {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark .job-header:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+body.dark .job-body {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+}
+
+/* Títulos de puestos */
+.job h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Fechas y lugar */
+.job .dates {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+/* Lista de responsabilidades */
+.job ul {
+  list-style: disc inside;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.job li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Modo oscuro */
+body.dark .job {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark .job .dates {
+  color: #bbb;
+}
+
+body.dark .job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+#projects {
+  margin-bottom: 3rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Dark mode */
+body.dark .project-card {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+}
+
+body.dark .project-card p {
+  color: #ccc;
+}
+
+.top-contact {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  z-index: 1000;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.top-contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.top-contact a:hover {
+  color: #ddd;
+}
+
+/* Dark mode */
+body.dark .top-contact {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .top-contact a {
+  color: #121212;
+}
+
+body.dark .top-contact a:hover {
+  color: #333;
+}
+
+
+.top-contact {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  z-index: 1000;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+}
+
+.top-contact.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.top-contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+body.dark .top-contact {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .top-contact a {
+  color: #121212;
+}
+
+body.dark .top-contact a:hover {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .top-contact {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.header-main {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  position: relative;
+}
+
+.header-main .name {
+  font-size: 3rem; /* grande y destacado */
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.header-main .subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Dark mode */
+body.dark .header-main .name {
+  color: #eaeaea;
+}
+
+body.dark .header-main .subtitle {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-main .name {
+    font-size: 2.2rem;
+  }
+  .header-main .subtitle {
+    font-size: 1rem;
+  }
+}
+
+.header-main .subtitle {
+  font-style: italic;
+  
+  /* degradado de texto */
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* para otros navegadores */
+  
+  /* obligatorio para que el efecto funcione en elementos en línea */
+  display: inline-block;
+}
+
+.header-main .name,
+.header-main .subtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* centra en el header */
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px; /* píldora redonda */
+  background-color: #222;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .main-nav a {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .main-nav a:hover {
+  background-color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+
+
+.profiles-container {
+  display: flex;
+  justify-content: center; /* centra los botones horizontalmente */
+  gap: 1rem;               /* espacio entre botones */
+  flex-wrap: wrap;          /* se adapta en móvil */
+  margin-top: 1rem;
+}
+
+.profile-button {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;       /* asegura que el texto esté centrado dentro del botón */
+  transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .profile-button {
+  background-color: #eaeaea;
+  color: #121212;
+}
+
+body.dark .profile-button:hover {
+  background-color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profiles-container {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center; /* centra los botones verticalmente */
+  }
+}

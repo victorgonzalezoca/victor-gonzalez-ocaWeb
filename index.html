@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Víctor González Oca | Personal & Professional</title>
+<meta name="description" content="Web personal y profesional de Víctor González Oca.">
+<link rel="stylesheet" href="estilos/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Botones de acción -->
+<button class="lang-switch" onclick="toggleLang()">EN</button>
+<button class="dark-switch" onclick="toggleDark()">🌙</button>
+
+<header class="container header-main">
+  <h1 class="name">
+    Víctor González Oca
+  </h1>
+  <p class="subtitle">
+    <span class="es">Sitio web personal y profesional</span>
+    <span class="en">Personal & Professional Website</span>
+  </p>
+  
+  <nav class="main-nav">
+  <a href="#about"><span class="es">Sobre mí</span><span class="en">About me</span></a>
+  <a href="#experience"><span class="es">Experiencia</span><span class="en">Experience</span></a>
+  <a href="#education"><span class="es">Formación</span><span class="en">Education</span></a>
+  <a href="#projects"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+  <a href="#profiles"><span class="es">Perfiles</span><span class="en">Profiles</span></a>
+  <a href="javascript:void(0);" id="toggle-contact">
+    <span class="es">Contacto</span><span class="en">Contact</span>
+  </a>
+</nav>
+
+</header>
+
+<main class="container">
+
+<div class="top-contact hidden">
+  <span class="es">Contacto: </span>
+  <span class="en">Contact: </span>
+  <a href="mailto:victorgonzalezoca@gmail.com">victorgonzalezoca@gmail.com</a>
+</div>
+
+<section id="about">
+  <h2>
+    <span class="es">Sobre mí</span>
+    <span class="en">About me</span>
+  </h2>
+  
+  <p class="es">
+    Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma</strong> con experiencia laboral en atención al cliente, logística y restauración. Me apasiona la tecnología, la creatividad y compartir mis proyectos e ideas en redes.
+  </p>
+  <p class="en">
+    I am a <strong>Multiplatform Application Development</strong> student with experience in customer service, logistics, and hospitality. I’m passionate about technology, creativity, and sharing my projects and ideas on social media.
+  </p>
+
+  <p class="es">
+    Además, me encanta la fotografía, el arte urbano y el cosplay, como puedes ver en mi 
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank" class="instagram-link">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon"> Instagram
+    </a>
+  </p>
+  <p class="en">
+    I also love photography, urban art, and cosplay, as you can see on my 
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank" class="instagram-link">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon"> Instagram
+    </a>
+  </p>
+
+<!-- Skills / Intereses -->
+<div class="skills">
+  <span class="skill"><span class="es">Desarrollo Web</span><span class="en">Web Development</span></span>
+  <span class="skill"><span class="es">Apps Multiplataforma</span><span class="en">Multiplatform Apps</span></span>
+  <span class="skill"><span class="es">Cosplay</span><span class="en">Cosplay</span></span>
+  <span class="skill"><span class="es">Fotografía</span><span class="en">Photography</span></span>
+  <span class="skill"><span class="es">Redes Sociales</span><span class="en">Social Media</span></span>
+  <span class="skill"><span class="es">Arte Urbano</span><span class="en">Urban Art</span></span>
+</div>
+
+  <!-- Mini galería de Instagram (ejemplo) -->
+  <div class="insta-gallery">
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/luffy.jpg" alt="Insta 1"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/pyramid.jpg" alt="Insta 2"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/reze.jpg" alt="Insta 3"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/sasuke.jpg" alt="Insta 4"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/anaxa.jpg" alt="Insta 5"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/zack.jpg" alt="Insta 6"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/saiki.jpg" alt="Insta 7"></a>
+    <a href="https://www.instagram.com/not.leon_cos/" target="_blank"><img src="documentos/imagenes/omniman.jpg" alt="Insta 8"></a>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>
+    <span class="es">Experiencia</span>
+    <span class="en">Experience</span>
+  </h2>
+
+  <!-- Alcampo -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Cajero y Reponedor – Alcampo</span>
+      <span class="en">Cashier & Stocker – Alcampo</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">02/2025 – Actual – Zaragoza, España</span>
+        <span class="en">02/2025 – Present – Zaragoza, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Encargado de realizar el cobro de los productos a los clientes.</span>
+          <span class="en">Responsible for handling customer payments.</span>
+        </li>
+        <li>
+          <span class="es">Responsable de la reposición de productos en estanterías.</span>
+          <span class="en">Responsible for restocking shelves.</span>
+        </li>
+        <li>
+          <span class="es">Atender a los clientesy resolver dudas.</span>
+          <span class="en">Assist customers and answering questions.</span>
+        </li>
+        <li>
+          <span class="es">Limpieza y mantenimiento del área de trabajo.</span>
+          <span class="en">Clean and maintain the workspace.</span>
+        </li>
+        <li>
+          <span class="es">Realizar inventarios y verificar las existencias de productos.</span>
+          <span class="en">Perform inventories and check product stock.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- McDonald's -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Empleado en Cocinas – McDonald's</span>
+      <span class="en">Kitchen Staff – McDonald's</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">07/2024 – 05/2025 – Zaragoza, España</span>
+        <span class="en">07/2024 – 05/2025 – Zaragoza, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Preparar las planchas, mesas de condimentos y reponer congeladores para el correcto funcionamiento de la cocina.</span>
+          <span class="en">Prepare grills, condiment stations, and restock freezers for smooth kitchen operations.</span>
+        </li>
+        <li>
+          <span class="es">Abrir la terraza y el salón, dejando todo listo antes de la apertura.</span>
+          <span class="en">Open the terrace and dining area, ensuring everything is ready before opening.</span>
+        </li>
+        <li>
+          <span class="es">Cocinar carnes, fritos y preparar pedidos para los clientes.</span>
+          <span class="en">Cook meats, fry items, and assemble customer orders.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Foster's Hollywood -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Camarero – Foster's Hollywood</span>
+      <span class="en">Waiter – Foster's Hollywood</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">03/2024 – 07/2024 – Zaragoza, España</span>
+        <span class="en">03/2024 – 07/2024 – Zaragoza, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Atender, sentar y tomar nota de los clientes usando PDA, actualizar cartas y ayudar en la elección de platos.</span>
+          <span class="en">Greet, seat, and take orders using PDA, update menus, and assist customers with meal choices.</span>
+        </li>
+        <li>
+          <span class="es">Servir bandejas, platos, postres y bebidas, asegurando un buen servicio.</span>
+          <span class="en">Serve trays, dishes, desserts, and drinks, ensuring excellent service.</span>
+        </li>
+        <li>
+          <span class="es">Limpieza de la línea de producción y sala, organizar inventarios y cámaras.</span>
+          <span class="en">Clean production line and dining area, organize inventory and storage.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 7 Alimentación -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Preparador de Pedidos – 7 Alimentación</span>
+      <span class="en">Order Picker – 7 Alimentación</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">09/2023 – 02/2024 – Zuera, España</span>
+        <span class="en">09/2023 – 02/2024 – Zuera, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Preparar pedidos del almacén y verificar que todo esté correcto.</span>
+          <span class="en">Prepare warehouse orders and ensure everything is correct.</span>
+        </li>
+        <li>
+          <span class="es">Realizar picking de productos y organizar carretillas y palets.</span>
+          <span class="en">Pick products and organize trolleys and pallets.</span>
+        </li>
+        <li>
+          <span class="es">Limpieza y orden del almacén, usando fregadora y escobas.</span>
+          <span class="en">Maintain warehouse cleanliness using floor scrubbers and brooms.</span>
+        </li>
+        <li>
+          <span class="es">Manejo de máquinas y carretillas para los pedidos.</span>
+          <span class="en">Operate machinery and forklifts to process orders.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 100 Montaditos -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Cocinero – 100 Montaditos</span>
+      <span class="en">Cook – 100 Montaditos</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">03/2023 – 09/2023 – Zaragoza, España</span>
+        <span class="en">03/2023 – 09/2023 – Zaragoza, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Limpieza del local, desde cocina hasta sala, y apertura/cierre del establecimiento.</span>
+          <span class="en">Clean the premises, from kitchen to dining area, and open/close the restaurant.</span>
+        </li>
+        <li>
+          <span class="es">Atender barra, cobrar clientes y servir bebidas usando TPV.</span>
+          <span class="en">Manage bar, process customer payments, and serve drinks using POS.</span>
+        </li>
+        <li>
+          <span class="es">Preparar fritos y emplatado de comandas de clientes.</span>
+          <span class="en">Prepare fried items and plate customer orders.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Business Balear -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Director Comercial – Business Balear</span>
+      <span class="en">Sales Director – Business Balear</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">07/2022 – 02/2023 – Mallorca, España</span>
+        <span class="en">07/2022 – 02/2023 – Mallorca, Spain</span>
+      </p>
+      <ul class="job-list">
+        <li>
+          <span class="es">Analizar candidatos y realizar entrevistas para ampliar la plantilla a nivel nacional.</span>
+          <span class="en">Analyze candidates and conduct interviews to expand the national team.</span>
+        </li>
+        <li>
+          <span class="es">Notificar al equipo cambios en tarifas, ofertas y condiciones.</span>
+          <span class="en">Notify the team of changes in rates, offers, and terms.</span>
+        </li>
+        <li>
+          <span class="es">Monitorear contratos y relaciones con la empresa, apoyando el crecimiento del equipo.</span>
+          <span class="en">Monitor contracts and company relations, supporting team growth.</span>
+        </li>
+        <li>
+            _______
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section id="education">
+  <h2>
+    <span class="es">Formación</span>
+    <span class="en">Education</span>
+  </h2>
+
+  <!-- DAM -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Grado Superior en Desarrollo de Aplicaciones Multiplataforma</span>
+      <span class="en">Higher Technician in Multiplatform Application Development</span>
+      <span class="arrow">▼</span>
+    </button>
+
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">09/2025 – Actual · Zaragoza, España</span>
+        <span class="en">09/2025 – Present · Zaragoza, Spain</span>
+      </p>
+
+      <p>
+        <span class="es"><strong>Centro:</strong> Colegio Montessori Zaragoza</span>
+        <span class="en"><strong>Institution:</strong> Montessori School Zaragoza</span>
+      </p>
+
+      <p>
+        <span class="es"><strong>Campo de estudio:</strong> Desarrollo y análisis de software y aplicaciones</span>
+        <span class="en"><strong>Field of study:</strong> Software and application development and analysis</span>
+      </p>
+
+      <p>
+        <a href="https://colegiomontessori.com/secretaria-virtual/" target="_blank">
+          <span class="es">Sitio web del centro</span>
+          <span class="en">Institution website</span>
+        </a>
+      </p>
+      <p>_______</p>
+    </div>
+  </div>
+
+  <!-- Bachillerato -->
+  <div class="job">
+    <button class="job-header">
+      <span class="es">Bachillerato</span>
+      <span class="en">High School Diploma</span>
+      <span class="arrow">▼</span>
+    </button>
+
+    <div class="job-body">
+      <p class="dates">
+        <span class="es">09/2014 – 05/2021 · Zaragoza, España</span>
+        <span class="en">09/2014 – 05/2021 · Zaragoza, Spain</span>
+      </p>
+
+      <p>
+        <span class="es"><strong>Centro:</strong> I.E.S. Andalan</span>
+        <span class="en"><strong>Institution:</strong> I.E.S. Andalan</span>
+      </p>
+
+      <p>
+        <span class="es">
+          <strong>Campo de estudio:</strong> Ciencias naturales, matemáticas y estadística
+        </span>
+        <span class="en">
+          <strong>Field of study:</strong> Natural sciences, mathematics and statistics
+        </span>
+      </p>
+
+      <p>
+        <span class="es"><strong>Dirección:</strong> C. de París, 1, 50003 Zaragoza</span>
+        <span class="en"><strong>Address:</strong> C. de París, 1, 50003 Zaragoza</span>
+      </p>
+
+      <p>
+        <a href="https://sites.google.com/a/iesandalan.es/web-del-instituto/" target="_blank">
+          <span class="es">Sitio web del centro</span>
+          <span class="en">Institution website</span>
+        </a>
+      </p>
+            <p>_______</p>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>
+    <span class="es">Proyectos</span>
+    <span class="en">Projects</span>
+  </h2>
+  
+  <div class="projects-container">
+    <!-- Tarjeta de ejemplo -->
+    <div class="project-card">
+      <h3><span class="es">Próximamente</span><span class="en">Coming Soon</span></h3>
+      <p>
+        <span class="es">Proyectos personales y profesionales en desarrollo.</span>
+        <span class="en">Personal and professional projects in progress.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="profiles">
+  <h2>
+    <span class="es">Perfiles</span>
+    <span class="en">Profiles</span>
+  </h2>
+  
+  <div class="profiles-container">
+    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/victor-gonzalez/a1475467-284a-4af0-9218-0b226b7a60c1?view=html" target="_blank" class="profile-button">
+      <span class="es">Perfil Europass</span>
+      <span class="en">Europass Profile</span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/víctor-gonzález-oca-946068223/" target="_blank" class="profile-button">
+      <span class="es">Perfil LinkedIn</span>
+      <span class="en">LinkedIn Profile</span>
+    </a>
+    
+    <a href="documentos/CVVictorGonzalezOca.pdf" download class="profile-button" target="_blank">
+      <span class="es">Descargar CV</span>
+      <span class="en">Download CV</span>
+    </a>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>© 2026 Víctor González Oca</p>
+</footer>
+
+<script src="documentos/script.js"></script>
+</body>
+</html>

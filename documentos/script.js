@@ -69,3 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+/* 🔥 ESTO ES LO QUE LO ARREGLA */
+document.addEventListener('DOMContentLoaded', () => {
+  applyLang();
+});

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Impostor | Proyecto</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #f0f2f5;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      max-width: 600px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark .container {
+      background: #1e1e1e;
+      color: #f0f2f5;
+    }
+
+    h1 { color: #4CAF50; margin-bottom: 20px; }
+    p { font-size: 16px; line-height: 1.6; margin-bottom: 30px; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.3s;
+      margin: 5px;
+    }
+
+    .btn:hover { background-color: #388E3C; }
+    .btn.gray { background-color: #555; }
+
+    .lang-switch, .dark-switch {
+      position: fixed;
+      top: 20px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .lang-switch { right: 100px; background: #4CAF50; color: white; }
+    .dark-switch { right: 20px; background: #555; color: white; }
+  </style>
+</head>
+<body>
+
+  <!-- Botones idioma y oscuro -->
+  <button class="lang-switch" onclick="toggleLang()">EN</button>
+  <button class="dark-switch" onclick="toggleDark()">🌙</button>
+
+  <div class="container">
+    <h1>
+      <span class="es">Proyecto: Juego del Impostor Online</span>
+      <span class="en">Project: Online Impostor Game</span>
+    </h1>
+
+    <p>
+<span class="es">
+  Este proyecto consiste en un juego multijugador online inspirado en el concepto del impostor, donde varios jugadores participan en una partida con roles ocultos. 
+  Uno o varios jugadores son impostores y deben engañar al resto, mientras que los demás deben completar tareas y descubrir quién miente. 
+  El juego incluye sistema de salas, interacción en tiempo real y mecánicas de votación para expulsar al sospechoso. 
+  Está diseñado para ofrecer una experiencia dinámica, social y estratégica, funcionando tanto en ordenador como en dispositivos móviles.
+  Este proyecto es ideal para aprender sobre desarrollo de juegos online, comunicación en tiempo real y lógica de juego multijugador.
+
+  IMPORTANTE; ES IMPOSIBLE JUGAR AHORA; ESTÁ EN DESARROLLO TODAVÍA
+</span>
+
+<span class="en">
+  This project is an online multiplayer game inspired by the impostor concept, where multiple players join a match with hidden roles. 
+  One or more players are impostors who must deceive others, while the rest complete tasks and try to identify the liar. 
+  The game includes room systems, real-time interaction, and voting mechanics to eliminate suspects. 
+  It is designed to provide a dynamic, social, and strategic experience, working on both desktop and mobile devices. 
+  This project is ideal for learning about online game development, real-time communication, and multiplayer game logic.
+
+  IMPORTANT, THIS GAME IS UNDER DEVELOPEMENT, ITS IMPOSSIBLE TO PLAY NOW
+</span>
+    </p>
+
+    <!-- Botón ir al juego -->
+    <a href="impostorReal.html" target="_blank" class="btn">
+      <span class="es">Jugar ahora</span>
+      <span class="en">Play Now</span>
+    </a>
+
+    <!-- Botón volver a proyectos -->
+    <a href="../proyectos.html" class="btn gray">
+      <span class="es">← Volver a Proyectos</span>
+      <span class="en">← Back to Projects</span>
+    </a>
+  </div>
+
+  <!-- Conecta tu script global -->
+  <script src="../documentos/script.js"></script>
+
+</body>
+</html>

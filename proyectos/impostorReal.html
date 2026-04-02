@@ -269,30 +269,7 @@
   .feature-title { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: .5rem; }
   .feature-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
 
-  /* PARTY GAMES */
-  .party-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
-  .party-card {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius-lg); overflow: hidden; cursor: pointer;
-    transition: border-color .2s, transform .15s; text-decoration: none; color: var(--text);
-    display: block;
-  }
-  .party-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-  .party-img {
-    height: 130px; display: flex; align-items: center; justify-content: center;
-    font-size: 4rem; position: relative;
-  }
-  .party-badge {
-    position: absolute; top: 10px; right: 10px;
-    font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
-    padding: 3px 8px; border-radius: 99px;
-  }
-  .badge-new { background: rgba(67,224,151,0.2); color: var(--accent3); }
-  .badge-top { background: rgba(255,107,107,0.2); color: var(--accent2); }
-  .badge-pop { background: rgba(124,111,255,0.2); color: #b0aaff; }
-  .party-info { padding: 1rem; }
-  .party-name { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: .4rem; }
-  .party-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
 
   /* FAQ */
   .faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 760px; margin: 0 auto; }
@@ -379,7 +356,6 @@
   <ul class="nav-links">
     <li><a href="#jugar">Jugar</a></li>
     <li><a href="#como-jugar">Cómo jugar</a></li>
-    <li><a href="#juegos">Juegos de fiesta</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <a href="#jugar" class="nav-cta">Empezar gratis</a>
@@ -621,50 +597,7 @@
   </div>
 </section>
 
-<!-- PARTY GAMES -->
-<section class="section" id="juegos" style="background:var(--surface);border-top:1px solid var(--border);max-width:100%;">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div class="section-label">Juegos de fiesta</div>
-    <div class="section-title">Más juegos para tu grupo</div>
-    <div class="section-sub">Los juegos sociales más populares del momento. Perfectos para romper el hielo.</div>
-    <div class="party-grid">
-      <a href="#" class="party-card">
-        <div class="party-img" style="background:rgba(67,224,151,0.07)">🎡
-          <span class="party-badge badge-new">NUEVO</span>
-        </div>
-        <div class="party-info">
-          <div class="party-name">Ruleta Aleatoria</div>
-          <div class="party-desc">La herramienta definitiva para decisiones y retos al azar.</div>
-        </div>
-      </a>
-      <a href="#" class="party-card">
-        <div class="party-img" style="background:rgba(124,111,255,0.07)">🎭
-          <span class="party-badge badge-pop">⭐ POPULAR</span>
-        </div>
-        <div class="party-info">
-          <div class="party-name">Juego de Mímica</div>
-          <div class="party-desc">Haz mímica mientras tus amigos adivinan la palabra.</div>
-        </div>
-      </a>
-      <a href="#" class="party-card">
-        <div class="party-img" style="background:rgba(255,107,107,0.07)">🔥
-          <span class="party-badge badge-top">TOP</span>
-        </div>
-        <div class="party-info">
-          <div class="party-name">Verdad o Reto</div>
-          <div class="party-desc">El clásico para descubrir secretos y retar a tus amigos.</div>
-        </div>
-      </a>
-      <a href="#" class="party-card">
-        <div class="party-img" style="background:rgba(255,180,0,0.07)">🙈</div>
-        <div class="party-info">
-          <div class="party-name">Yo Nunca</div>
-          <div class="party-desc">Descubre las locuras más grandes que han hecho tus amigos.</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
+
 
 <!-- FAQ -->
 <section class="section" id="faq">
@@ -740,7 +673,7 @@
       <h4>Recursos</h4>
       <ul>
         <li><a href="#">Cómo jugar</a></li>
-        <li><a href="#">Juegos de fiesta</a></li>
+        <li><a href="#">Generador IA</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Precios</a></li>
       </ul>
